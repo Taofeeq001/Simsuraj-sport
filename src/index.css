@@ -1,3 +1,8 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +10,243 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  align-items: center;
+  width: 100%;
+  /* background-color: yellow; */
+  background: url(./Components/bg.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: cover;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* ==================Footer styling ================== */
+.header{
+  background-color: white;
+  padding: 13px 3rem;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  justify-content: space-between;
+}
+.left-head{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  border-right: 2px solid black;
+}
+.left-head h2{
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+}
+.profile{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.profile img{
+  width: 40px;
+}
+.lefthead{
+  text-decoration: none;
+}
+.profile a{
+  text-decoration: none;
+  margin-right: 20px;
+  color: black;
+}
+.right ul{
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+.right ul li a{
+  text-decoration: none;
+  color: black;
+}
+form{
+  background-color: white;
+  border: 1px solid black;
+  width: 100%;
+  border-radius: 15px;
+  align-items: center;
+  display: flex;
+  padding-left: 5px;
+}
+form input {
+  padding: 12px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  color: white;
+}
+form button{
+  padding: 12px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border: none;
+  background-color: yellow;
+  color: black;
+  font-weight: 400;
+  cursor: pointer;
+}
+.hamburger{
+  background-color: transparent;
+  display: none;
+  border: none;
+  
+}
+.hamburger img{
+  height: 30px;
+  width: 50px;
+}
+
+/* ====================== End of Nav ================ */
+
+/* ======================= Begining of Sport tab====================== */
+.sport{
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  height: 60vh;
+}
+.search-scores{
+  width: 60%;
+}
+.search-scores input{
+  width: 100%;
+  padding: 5px;
+}
+.score-fixtures h1{
+  color: white;
+}
+
+
+/* ==================BEGINNING OF FOOTER ====================*/
+footer{
+  background-color: black;
+  width: 100%;
+  color: white;
+  padding: 30px;
+  /* height: 20vh;  */
+}
+footer a{
+  text-decoration: none;
+  color: white;
+}
+.foot-down{
+  display: flex;
+  gap: 40px;
+}
+.one, .two, .three{
+  display: flex;
+  flex-direction: column;
+}
+.mobile-nav{
+  display: none;
+}
+/* =================  Club Name ======================= */
+.club-name{
+  display: flex;
+  border-bottom: 1px solid black;
+  background-color: aquamarine;
+  width: 100%;
+  display: flex;
+}
+.home-away a{
+  text-decoration: none;
+  color: black;
+}
+.league{
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 50%;
+  align-items: center;
+  background-color: white;
+}
+.ind-div{
+  border-bottom: 1px solid black;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.home-away{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.score{
+  background-color: green;
+  color: white;
+  font-weight: 600;
+  padding: 2px;
+}
+.status{
+  background-color: wheat;
+  padding: 5px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+@media screen and (max-width:950px) {
+  .header{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .right{
+    display: none;
+  }
+  .left-head{
+    gap: 10px;
+  }
+  .search-sim{
+    display: none;
+  }
+  .mobile-nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .mobile-nav ul li{
+    list-style: none;
+  }
+  .mobile-nav ul li a{
+    text-decoration: none;
+    color: black;
+
+  }
+  .hamburger{
+    display: block;
+  }
+  .mobile-nav{
+    display: block;
+    background-color: lightyellow;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 8vh;
+    height: 0;
+    overflow: hidden;
+    transition: 3s ease;
+  }
+  .display{
+    width: 100;
+    height: 60vh;
+    transition: 3s ease;
+  }
+
 }
