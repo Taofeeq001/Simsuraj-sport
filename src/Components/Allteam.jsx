@@ -9,7 +9,7 @@ const Allteam=()=>{
         <div>
             <Nav/>
             <Sport/>
-            {/* <Footer/> */}
+            <Footer/>
         </div>
     )
     

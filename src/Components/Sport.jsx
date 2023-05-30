@@ -34,7 +34,7 @@ const Sport=()=>{
                         <div key={index} className="ind-div">
                             <h4>{fixture.competition_name}</h4>
                             <div className="home-away">
-                                <a href="/sport/matchdetails"><p>{fixture.home_name} vs {fixture.away_name}</p></a>
+                                <a href={`/sport/matchdetails/${fixture.competition_id}`}><p>{fixture.home_name} vs {fixture.away_name}</p></a>
                                 <p className="score">{fixture.score}</p>
                                 <p>{fixture.scheduled}</p>
                                 <p className="status">{fixture.status}</p>
