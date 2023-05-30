@@ -248,5 +248,8 @@ footer a{
     height: 60vh;
     transition: 3s ease;
   }
+  .league{
+    width: 90%;
+  }
 
 }
